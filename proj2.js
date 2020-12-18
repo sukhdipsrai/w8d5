@@ -106,7 +106,13 @@ function absurdBubbleSort(arr, sortCompletionCallback) {
     outerBubbleSortLoop();
 }
 
+// Pro way below, async
 absurdBubbleSort([3, 2, 1], function (arr) {
     console.log("Sorted array: " + JSON.stringify(arr));
     rl.close();
 });
+
+// Noob way not async below
+// arr = [3,2,1];
+// absurdBubbleSort(arr,ele => console.log("js sucks"))
+// console.log(arr)
